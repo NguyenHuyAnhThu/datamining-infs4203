@@ -1,9 +1,9 @@
 1. Code setting up
-	1.1 Environment Description
+- Environment Description:
 		Python version: Python 3.12.4
 		IDE: VSCode (1.86.2 (Universal))
 		OS: Darwin (MacOS) version='Darwin Kernel Version 23.2.0’
-	1.2 Library
+- Library:
 		You have to have all the libraries used in the project including: numpy,  pandas and sklearn
 		You can run these command in your terminal to install them:
 			python -m venv sklearn-env
