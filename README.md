@@ -1,26 +1,27 @@
 1. Code setting up
-1.1 Environment Description
-Python version: Python 3.12.4
-IDE: VSCode (1.86.2 (Universal))
-OS: Darwin (MacOS) version='Darwin Kernel Version 23.2.0’
-1.2 Library
-You have to have all the libraries used in the project including: numpy,  pandas and sklearn
-You can run these command in your terminal to install them:
-python -m venv sklearn-env
-source sklearn-env/bin/activate  # activate
-pip install -U scikit-learn
-pip install pandas
+	1.1 Environment Description
+		Python version: Python 3.12.4
+		IDE: VSCode (1.86.2 (Universal))
+		OS: Darwin (MacOS) version='Darwin Kernel Version 23.2.0’
+	1.2 Library
+		You have to have all the libraries used in the project including: numpy,  pandas and sklearn
+		You can run these command in your terminal to install them:
+			python -m venv sklearn-env
+			source sklearn-env/bin/activate  # activate
+			pip install -U scikit-learn
+			pip install pandas
 
-2. Update from project proposal
-Cross-validation cv=4
+3. Update from project proposal
+   Cross-validation cv=4
 - Imputation: Calculate cross_val_score() for Mean and Class-specific imputation + train them on 4 models and choose the best one for each model based on the highest F1 score.
 - Normalization: Calculate cross_val_score() for MinMaxScaler() and StandardScaler() + train them on 4 models to choose the best one for each model based on the highest F1 score.
 - Outlier removal: Calculate cross_val_score() for Local Outlier Factor (LOF) and Isolation forest + train them on 4 models and choose the best one for each model based on the highest F1 score.
 
-3. Reproduction Instructions
-How to run code from terminal: python s4869584.py - use this command to run the entire python file. This python file includes all coding for Pre-processing method comparison, Pre-processing, Hyperparameter Tuning Procedures, Model predicting and Report generation and because I did not separate the them so it will run every step from Pre-processing to Report generation (might take about 10-15 mins to finish). 
+3. Reproduction Instruction
+- How to run code from terminal: python s4869584.py - use this command to run the entire python file.
+- This python file includes all coding for Pre-processing method comparison, Pre-processing, Hyperparameter Tuning Procedures, Model predicting and Report generation and because I did not separate the them so it will run every step from Pre-processing to Report generation (might take about 10-15 mins to finish). 
 
-4. Final choice
+6. Final choice
 The result after doing the comparison between imputation method (mean and class-specific):
 - Class-specific Imputation Results: {'Decision Tree': {'mean_f1': 0.614, 'std_f1': 0.04}, 
                            'Random Forest': {'mean_f1': 0.655, 'std_f1': 0.032}, 
